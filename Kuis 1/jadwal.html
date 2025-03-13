@@ -6,29 +6,51 @@
     <title>Kuis PemWeb</title>
     <style>
         body { 
-            background-image: image-set("bg.png");
+            background-image: image-set("bg.jpg");
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 150px;
+        }
+        nav a {
+            margin-left: 15px;
+            color: black;
+        }
+        nav div {
+            display: flex;
         }
         table {
-            height: 200px;
-            width: 80%;
+            height: 300px;
+            width: 60%;
             margin-top: 75px;
-            margin-left: 10%;
-            margin-right: 10%;
+            margin-left: 20%;
+            margin-right: 20%;
             text-align: center;
             border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-color: black;
+            font-size: 15px;
         }
     </style>
 </head>
 <body>
     <nav>
         <h3>Biodata</h3>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="#">Jadwal</a></li>
+        <div>
+           <a href="home.html">Home</a>
+            <a href="#">Jadwal</a> 
+        </div>
     </nav>
     <table border="1">
         <tr>
-            <th rowspan="2">Jam</th>
-            <th colspan="5">Hari</th>
+            <th rowspan="2" style="background-color: grey;">Jam</th>
+            <th colspan="5" style="background-color: grey;">Hari</th>
         </tr>
         <tr>
             <th>Senin</th>

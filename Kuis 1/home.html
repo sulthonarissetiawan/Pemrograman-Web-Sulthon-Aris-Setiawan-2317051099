@@ -6,40 +6,80 @@
     <title>Kuis PemWeb</title>
     <style>
         body { 
-            background-image: image-set("bg.png");
+            background-image: image-set("bg.jpg");
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 150px;
+        }
+        nav a {
+            margin-left: 15px;
+            color: black;
+        }
+        nav div {
+            display: flex;
         }
         img {
             height: 100px;
             width: 100px;
         }
-        div {
-            height: 100%;
-            width: 100%;
-            padding-top: 100px;
+        .bio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            padding: 20px;
+            width: 50%;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            margin: auto;
             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
         }
-        h2 {
+        .bio p, .bio h3 {
+            margin: 5px 0;
+            color: black;
             text-align: center;
         }
-        h3 {
-            text-align: center;
+        button {
+            background-color: red;
+            color: white;
+            height: 30px;
+            width: 150px;
+            border-radius: 50px;
         }
     </style>
 </head>
 <body>
     <nav>
         <h3>Biodata</h3>
-        <li><a href="#">Home</a></li>
-        <li><a href="jadwal.html">Jadwal</a></li>
+        <div>
+            <a href="#">Home</a>
+            <a href="jadwal.html">Jadwal</a>
+        </div>
     </nav>
-    <div>
+    <div class="bio">
         <img src="poto.jpg" alt="">
-        <h3>Perkenalkan Saya</h3>
-        <h2>Sulthon Aris Setiawan</h2>
-        <h3>NPM 2317051099</h3>
-        <h3>Jurusan Ilmu Komputer</h3>
-        <h3>Universitas Lampung</h3>
+        <p>Perkenalkan Saya</p>
+        <h3>Sulthon Aris Setiawan</h3>
+        <p>NPM 2317051099</p>
+        <p>Jurusan Ilmu Komputer</p>
+        <p>Universitas Lampung</p>
+        <button onclick="window.location.href='jadwal.html'">Lihat Jadwal</button>
     </div>
 </body>
 </html>
