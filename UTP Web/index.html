@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sulthonas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @font-face { 
+      font-family: arial_narrow_7;
+      src: url('arial_narrow_7.ttf');
+      format: ('truetype');
+    }
+    * {
+      font-family: arial_narrow_7;
+    }
+    .hero {
+      background: #3498DB;
+      color: white;
+      padding: 140px 0 70px 0;
+      text-align: center;
+    }
+    .section-title {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    }
+    .text-center {
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #3498DB;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">sulthonas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="proyek.html">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+
+  <section class="hero">
+    <div class="container">
+      <h1>Hai, Saya <strong>Sulthon Aris Setiawan</strong></h1>
+      <p class="lead">Seorang Mahasisawa Ilmu Komputer</p>
+    </div>
+  </section>
+
+  <div class="container text-center mt-5">
+    <h2 class="section-title">Tentang Saya</h2>
+    <p class="text-muted">Saya seorang mahasiswa Ilmu Komputer angkatan 2023 di Universitas Lampung yang antusias mengembangkan keterampilan di bidang teknologi dan sistem informasi.</p>
+    <a href="tentang.html" class="btn btn-outline-primary mt-3">Selengkapnya</a>
+  </div>
+
+  <div class="container mt-5">
+    <h2 class="section-title">Proyek Saya & Tim</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card project-card shadow-sm h-100">
+          <img src="proyek1.png" class="card-img-top" alt="Proyek 1">
+          <div class="card-body">
+            <h5 class="card-title">SkyQuest Game</h5>
+            <p class="card-text">Game yang dibuat menggunakan bahasa Java.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card shadow-sm h-100">
+          <img src="proyek1.png" class="card-img-top" alt="Proyek 1">
+          <div class="card-body">
+            <h5 class="card-title">SkyQuest Game</h5>
+            <p class="card-text">Game yang dibuat menggunakan bahasa Java.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card shadow-sm h-100">
+          <img src="proyek1.png" class="card-img-top" alt="Proyek 1">
+          <div class="card-body">
+            <h5 class="card-title">SkyQuest Game</h5>
+            <p class="card-text">Game yang dibuat menggunakan bahasa Java.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="proyek.html" class="btn btn-outline-primary mt-3">Lihat semua proyek</a>
+    </div>
+  </div>
+
+  <footer class="mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Sulthon Aris Sertiawan</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
